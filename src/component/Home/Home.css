@@ -1,0 +1,109 @@
+.home{
+    height: 100vh;
+    background-image: url("https://www.aesop.com/u1nb1km7t5q7/AGQGWYrTapcQI1NrPvsYU/11e99769c1767531dd3c12b6fce85f37/Aesop_Bar_Soaps_2023_Web_Homepage_2_Primary_Full_Bleed_Desktop_2880x1044px.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.home_nav_responsive{
+    display: none;
+}
+
+.home_container_1{
+    display: none;
+   }
+
+.home_container{
+padding: 130px;
+    display: flex;
+    width: 500px;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.home_1{
+    color: white;
+    /* width: fit-content; */
+    font-size: 3.5rem;
+}
+
+.home_2{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* height: 400px; */
+    margin: 40px 0;
+    color: white;
+    font-size: 16px;
+}
+
+.button{
+    width: 90%;
+    border: 1px solid white;
+    display: flex;
+    /* color: white; */
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+   background-color: white;
+   color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .home{
+        height: 70vh;
+    }
+    .home_container{
+     display: none;
+    }
+    .home_container_1{
+        display: flex;
+        background-color: #333;
+        padding: 20px;
+        /* width: 500px; */
+        height: 400px;
+        justify-content: space-between;
+    }
+
+    .home_1_child{
+    color: white;
+    /* width: fit-content; */
+    font-size: 2rem;
+}
+
+.home_2_child{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* height: 400px; */
+    margin: 40px 0;
+    color: white;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 630px) {
+    .home_nav_responsive{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        height: fit-content;
+        color: white;
+    }
+    .home_nav_responsive > div{
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    .home_nav_responsive > div>p{
+        margin: 0 10px;
+    }
+}
